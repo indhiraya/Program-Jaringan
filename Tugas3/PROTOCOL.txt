@@ -63,3 +63,6 @@ HAPUS
 - GAGAL:
   - status: ERROR
   - data: pesan kesalahan
+
+Penjelasan Tambahan:
+Sesuai dengan soal kita diminta untuk menambahkan fungsi Upload dan Hapus. Upload digunakan supaya client dapat mengunggah file ke server dengan menyertakan nama file dan isi file yang telah diencode dalam format base64. Jika berhasil maka server akan mengembalikan status OK dan pesan konfirmasi uploaded successfully. Tetapi jika gagal akan mengembalikan status error beserta pesan kesalahannya dari system. Untuk perintah Hapus digunakan supaya client dapat menghapus file tertentu di server dengan menyertakan nama file sebagai parameternya. Server akan merespons dengan status OK jika penghapusan berhasil dan pesan konfismasi deleted successfully. Jika gagal maka akan mengembalikan status ERROR beserta pesan errornya.
