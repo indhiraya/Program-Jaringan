@@ -3,7 +3,6 @@ import json
 import base64
 from glob import glob
 
-
 class FileInterface:
     def __init__(self):
         base_dir = os.path.dirname(os.path.abspath(__file__))
