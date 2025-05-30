@@ -38,7 +38,7 @@ class ServerThreadPool:
     def run(self):
         logging.warning(f"server berjalan di ip address {self.ipinfo} dengan thread pool (max_workers={self.max_workers})")
         self.my_socket.bind(self.ipinfo)
-        self.my_socket.listen(5)
+        self.my_socket.listen(100)
         while True:
             self.connection, self.client_address = self.my_socket.accept()
             logging.warning(f"connection from {self.client_address}")
