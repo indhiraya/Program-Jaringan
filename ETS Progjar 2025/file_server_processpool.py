@@ -37,7 +37,7 @@ class ServerProcessPool:
     def run(self):
         logging.warning(f"server berjalan di ip address {self.ipinfo} dengan process pool (max_workers={self.max_workers})")
         self.my_socket.bind(self.ipinfo)
-        self.my_socket.listen(5)
+        self.my_socket.listen(100)
         client_handler = ProcessTheClient()
         while True:
             connection, client_address = self.my_socket.accept()
